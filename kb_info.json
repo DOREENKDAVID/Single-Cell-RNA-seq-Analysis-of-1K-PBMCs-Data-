@@ -1,0 +1,32 @@
+{
+    "workdir": "/mnt/d/DIY_Transcriptomics/scRNA_seq",
+    "version": "0.29.5",
+    "kallisto": {
+        "path": "/home/kinya/miniconda3/envs/kb/lib/python3.10/site-packages/kb_python/bins/linux/kallisto/kallisto",
+        "version": "0.51.1"
+    },
+    "bustools": {
+        "path": "/home/kinya/miniconda3/envs/kb/lib/python3.10/site-packages/kb_python/bins/linux/bustools/bustools",
+        "version": "0.45.1"
+    },
+    "start_time": "2025-12-14T00:49:23.329129",
+    "end_time": "2025-12-14T01:01:48.940935",
+    "elapsed": 745.611806,
+    "call": "/home/kinya/miniconda3/envs/kb/bin/kb count pbmc_1k_v3_S1_mergedLanes_R1.fastq.gz pbmc_1k_v3_S1_mergedLanes_R2.fastq.gz -i Homo_sapiens.GRCh38.cdna.idx -x10XV3 -g t2g.txt --cellranger",
+    "commands": [
+        "kallisto bus -i Homo_sapiens.GRCh38.cdna.idx -o . -x 10XV3 -t 8 pbmc_1k_v3_S1_mergedLanes_R1.fastq.gz pbmc_1k_v3_S1_mergedLanes_R2.fastq.gz",
+        "bustools sort -o ./tmp/output.s.bus -T ./tmp -t 8 -m 2G ./output.bus",
+        "bustools inspect -o ./inspect.json -w ./10x_version3_whitelist.txt ./tmp/output.s.bus",
+        "bustools correct -o ./tmp/output.s.c.bus -w ./10x_version3_whitelist.txt ./tmp/output.s.bus",
+        "bustools sort -o ./output.unfiltered.bus -T ./tmp -t 8 -m 2G ./tmp/output.s.c.bus",
+        "bustools count -o ./counts_unfiltered/cells_x_genes -g t2g.txt -e ./matrix.ec -t ./transcripts.txt --genecounts --umi-gene ./output.unfiltered.bus"
+    ],
+    "runtimes": [
+        588.3185923099518,
+        18.59252667427063,
+        33.1371955871582,
+        64.55919766426086,
+        7.315414905548096,
+        25.029921531677246
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"n_targets": 219373311,
+	"n_bootstraps": 0,
+	"n_processed": 66601887,
+	"n_pseudoaligned": 38360739,
+	"n_unique": 11896618,
+	"p_pseudoaligned": 57.6,
+	"p_unique": 17.9,
+	"kallisto_version": "0.46.2",
+	"index_version": -491034640,
+	"start_time": "Sat Nov 27 18:42:57 2021",
+	"call": "/Users/danielbeiting/miniconda/envs/kb/lib/python3.8/site-packages/kb_python/bins/darwin/kallisto/kallisto bus -i Homo_sapiens.GRCh38.cdna.all.index -o . -x 10XV3 -t 8 pbmc_1k_v3_S1_mergedLanes_R1.fastq.gz pbmc_1k_v3_S1_mergedLanes_R2.fastq.gz"
+}
