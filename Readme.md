@@ -69,14 +69,18 @@ Quality Control (QC): performed using DropUtils and Seurat’s built-in metrics,
 ![metrics Violin plots](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/QC_violin_plot.png)
 
 A comprehensive QC report was generated using diagnostic plots such as:
-![QC report](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/PBMC_10Xv3_summary.html)
+![QC report](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/barcode_rank.png)
 
 ### Normalization and Feature Selection:
 Data normalization using NormalizeData, Identification of highly variable genes using FindVariableFeatures, Data scaling to ensure equal contribution of genes
+![normalization](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/normalization.png)
+![FindVariableFeatures](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/HVG.png)
+
+
 
 ### Dimensionality Reduction and Clustering: 
 Principal Component Analysis (PCA), Nearest-neighbor graph construction, Clustering using the Louvain/Leiden algorithm
-
+![PCA](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/pca_plots.png)
 ### Marker Gene Identification : 
 Cluster-specific marker genes were identified using: FindAllMarkers, Statistical tests including Wilcoxon rank-sum. Top marker genes were visualized using heatmaps and feature plots.
 
