@@ -66,10 +66,10 @@ Quality Control (QC): performed using DropUtils and Seurat’s built-in metrics,
 -Number of detected genes per cell (nFeature_RNA)
 -Total UMI counts per cell (nCount_RNA)
 -Percentage of mitochondrial gene expression (percent.mt)
-![metrics Violin plots]("https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/QC_violin_plot.png")
+![metrics Violin plots](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/QC_violin_plot.png)
 
 A comprehensive QC report was generated using diagnostic plots such as:
-![QC report]("https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/PBMC_10Xv3_summary.html")
+![QC report](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/PBMC_10Xv3_summary.html)
 
 ### Normalization and Feature Selection:
 Data normalization using NormalizeData, Identification of highly variable genes using FindVariableFeatures, Data scaling to ensure equal contribution of genes
@@ -85,7 +85,7 @@ Cluster-specific marker genes were identified using: FindAllMarkers, Statistical
 - CellAssign for probabilistic cell type assignment
 - cluster annotation in Scanpy was performed manually, based on: Canonical immune marker genes (e.g., CD3D, MS4A1, NKG7, FCGR3A) 
 - major cell types: CD4 T cells, CD8 T cells, B cells, NK cells, CD14+ Monocytes, FCGR3A+ Monocytes, Dendritic cells
-![cluster annotation]("https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/cluster_annotation_plot.png")
+![cluster annotation](https://github.com/DOREENKDAVID/Single-Cell-RNA-seq-Analysis-of-1K-PBMCs-Data-/blob/main/figures/cluster_annotation_plot.png)
 # Results and Interpretation
 Consistent immune cell populations were identified across both R and Python pipelines
 Marker genes matched known PBMC cell-type signatures
